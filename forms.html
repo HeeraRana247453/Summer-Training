@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>application</title>
+    <link rel="icon" href="https://clipground.com/images/logo-tour-and-travel-clipart.jpg" type="image/X-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1><img src="https://www.hadronstechnologies.com/assets/img/industries/tour-travel.png" alt="Error"
+                    width="60px" height="30px"><big><b> YATRI.COM </b></big></h1>
+            <hr>
+            <div style="background-color:grey">
+                <ul>
+                    <li><b>Home</b></li>
+                    <li><b>About</b></li>
+                    <li><b>Services</b></li>
+                    <li><b>Contact</b></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <hr>
+    <main>
+        <!-- Division for Video and Image -->
+         <div>
+<!--iframe--><iframe width="480" height="200" frameborder="0" src="https://www.youtube.com/embed/Xj4E0Zry6K4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" autoplay=1 allowfullscreen></iframe>
+<!--video--> <video src="promo.mp4" width="480" height="200" controls autoplay muted loop></video>
+<!--img-->   <img src="https://2.bp.blogspot.com/-3-8fCX6yYkU/W3XWqxa2WdI/AAAAAAAAASo/MPJWk9fgWsQBwPQwWwC_EAkcnIUFfSWuQCLcBGAs/s1600/responsible%2Bcitizens%2Bof%2Bour%2Bcountry-1.jpg" alt="Error" width="350" height="200">
+             <iframe src="http://www.bing.com" width="800" height="150"></iframe>
+         </div>
+
+
+        <form action="form.php">
+            <!-- Fisrt Division For Basic Details-->
+            <div style="background-color:rgb(252, 160, 73)">
+                <h3 style="background-color:rgb(153, 3, 158)"><u>Enter your basic details</u></h3>
+                <hr>
+<!--text-->     <lable for="name1">Name:</lable>
+                <input type="text" name="name" id="name1" placeholder="Enter your name"><br><br>
+<!--tel-->      <label for="contactnum">Contact No.:</label>
+                <input type="tel" name="contact" id="contactnum" placeholder="Enter your Contact No."><br><br>
+<!--email-->    <lable for="email-id">Email-Id:</lable>
+                <input type="email" name="email" id="email-id" placeholder="Enter your Email-Id."><br><br>
+<!--checkbox--> <lable for="maritalstatus1">Married</lable>
+                <input type="checkbox" name="maritalstatus" id="maritalstatus1"><br>
+            </div>
+
+            <!-- Second DIvision For Journey Details -->
+            <div style="background-color:rgb(252, 138, 252)">
+                <h3 style="background-color:rgb(39, 105, 1)"><u>Details of journey</u></h3>
+                <hr>
+<!--select-->   <label for="mode">Mode of transport:</label>
+                <select name="transport" id="mode">
+                    <option value="transport0">select</option>
+                    <option value="transport1">Train</option>
+                    <option value="transport2">Flight</option>
+                    <option value="transport3">Ship</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <lable for="from">Depart From:</lable>
+                <input type="text" name="DepartFrom" id="from" class="journeydetails"
+                    placeholder="Enter the origin"><br><br>
+                <label for="to">Destination:</label>
+                <input type="text" name="Destination" id="to" class="journeydetails"
+                    placeholder="Enter the destination">
+                <br>
+                <br>
+                <br>
+<!--time-->     <label for="time1">Time:</label>
+                <input type="time" name="Time" id="time1" class="journeydetails"><br><br>
+<!--date-->     <label for="date1">Date:</label>
+                <input type="date" name="Date" id="date1" class="journeydetails">
+                <br><br>
+            </div>
+
+            <!-- Third Division For Facilites -->
+            <div style="background-color:aqua">
+                <h3 style="background-color:rgba(152, 21, 212, 0.877)"><u>Facilities</u></h3>
+                <hr>
+<!--radio-->    <label for="selection1">First Class</label>
+                <input type="radio" name="selection" value="firstclass" id="selection1" class="facilities"><br>
+                <label for="selection2">Second Class</label>
+                <input type="radio" name="selection" value="secondclass" id="selection2" class="facilities"><br>
+                <label for="selection3">Third Class</label>
+                <input type="radio" name="selection" value="thirdclass" id="selection3" class="facilities"><br><br>
+            </div>
+
+            <!-- Fourth Division For Buying Details -->
+            <div style="background-color:rgb(58, 255, 163)">
+                <h3 style="background-color:rgb(1, 134, 45)"><u>Buy the ticket</u></h3>
+                <hr>
+ <!--number-->  <label for="no.oftickect">Number of tickets:</label>
+                <input type="number" name="Number" id="no.ofticket" class="Buyingdetails" placeholder="Enter the No. of Tickets"><br><br>
+<!--file-->     <label for="uploadaadhar">Upload your Adhaar-card:</label>
+                <input type="file" name="File" id="uploadaadhar" class="buyingdetails"><br><br>
+<!--url-->      <label for="photoURL">Upload your institute Website URL:</label>
+                <input type="url" name="PhotoURL" id="photoURL" class="buyingdetails" placeholder="URL of your institute"><br><br>
+<!--Text Area--><textarea style="background-color:rgb(88, 255, 177)" cols="44" rows="8" name="Textarea" id="textarea" placeholder="Add Comment (Optional)"></textarea><br>
+<!--password--> <label for="passward">Password:</label>
+                <input type="password" name="Password" id="password" placeholder="Enter the password"><br>
+<!--tel-->      <label for="payment">Ticket Fare:</label>
+                <input type="tel" name="Payment" id="payment" class="buyingdetails" placeholder="Enter the Amount">
+                <label for="paybutton"></label>
+<!--button-->   <button style="background-color:green"><img
+                        src="https://qph.fs.quoracdn.net/main-qimg-adf4994ccb6aaed7f116563b96e9a0d2" alt="Error" width="35px"></button><br><br>
+            </div>
+            <br>
+
+            <label for="submitbutton"></label>
+<!--submit--><input type="submit" name="Submit" id="submitbutton" class="buyingdetails" style="background-color:green">
+        </form>
+
+    </main>
+    <footer></footer>
+</body>
+</html>
